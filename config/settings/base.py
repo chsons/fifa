@@ -44,7 +44,7 @@ LOCALE_PATHS = [str(ROOT_DIR / "locale")]
 DATABASES = {
     "default": env.db(
         "DATABASE_URL",
-        default="postgres://localhost/fifa",
+        default="postgres://postgres:root@localhost:5050/djangofifa",
     ),
 }
 DATABASES["default"]["ATOMIC_REQUESTS"] = True
